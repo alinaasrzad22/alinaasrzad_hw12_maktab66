@@ -1,0 +1,48 @@
+@import "mixin";
+@import "variable";
+
+@import "mixin";
+@import "btn" ;
+
+$bg-color-page : #f2f2f2;
+$font-type : Arial, Helvetica, sans-serif;
+$bg-color-success : #04AA6D;
+$bg-color-text : white;
+
+
+#btn-success{
+    @include btnStyle($bg-color-text , $bg-color-success , 19px);
+}
+@mixin btnStyle($color , $bg-color-btn , $font-size-btn) {
+    background-color: $bg-color-btn;
+    color: $color;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: $font-size-btn;
+}
+
+@mixin inputDivStyle() {
+    border: 1px solid  $bg-color-page ;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-type;
+}
+
+.container{
+    background-color: $bg-color-page;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+}

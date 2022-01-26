@@ -1,0 +1,6 @@
+
+@mixin rtl($pseudo, $x, $y) {
+    $pseudo:false;
+    width: 100%;
+    padding-top:($Y/$X *100% ) ;
+}
